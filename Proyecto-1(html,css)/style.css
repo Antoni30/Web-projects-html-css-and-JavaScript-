@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/*Cabecera*/
+body{
+    padding-top: 60px;
+}
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    background-image: linear-gradient(to right,rgba(0, 171, 228, 0.925),white) ;
+    z-index: 300;
+}
+.edit{
+    font-size: 30px;
+    color:white;
+    display: inline-block;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    margin: 10px 10px 10px 10px ;
+}
+header nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    width: 80px;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+}
+.navigate{
+    text-decoration: none;
+    color: white;
+    opacity: .8 ;
+    font-size: 18px;
+}
+header nav{
+    display: inline-block;
+}
+.navigate:hover{
+    opacity: 1;
+}
+.icon-web-contact{
+    float: right;
+}
+img{
+    width: 35px;
+    margin: 10px 5px 10px 5px;
+}
+.main-box{
+    width: 100%;
+    height: 580px;
+    background-color: rgba(128, 127, 201, 0.575);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#texto{
+    z-index: 99999;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+}
+/*end*/
+.box-logo{
+    margin: auto;
+    width: 180px;
+    height: 180px;
+    display: grid;
+    position: absolute;
+    place-items: center;
+    background-color: #800080;
+    transform: rotate(-45deg);
+    animation: latirFuera;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.box-logo::after{
+    content: "";
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #800080;
+    top: -90px;
+    left: 0;
+}
+.box-logo::before{
+    content: "";
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #800080;
+    left:90px;
+    top:0
+}
+.container-1{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background-color:rgb(228, 0, 0);
+    z-index: 50;
+    animation-name: latir;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.container-1::before{
+    content: "";
+    position:absolute;
+    width: 70px;
+    height:70px;
+    border-radius: 50%;
+    left: 35px;
+    background-color: rgb(228, 0, 0);
+}
+.container-1::after{
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(228, 0, 0);
+    top:-35px;
+    left: 0px;
+}
+@keyframes latir{
+    0% 
+    {
+        transform: scale(3);
+    }
+    50% 
+    {
+        transform: scale(1.5);
+    }
+    100%
+    {
+        transform: scale(3);
+    }
+}
+@keyframes latirFuera{
+    0%{
+        transform: scale(1) rotate(-45deg);
+    }
+    50% 
+    {
+        transform: scale(1.5) rotate(-45deg);
+    }
+    100%{
+        transform: scale(1) rotate(-45deg);
+    }
+}
