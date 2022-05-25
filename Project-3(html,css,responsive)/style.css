@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Koulen', cursive;
+}
+body::before{
+    content: "";
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: rgba(196, 22, 22, 0.979);
+    background-image: linear-gradient(rgba(16, 100, 211, 0.705),rgba(71, 7, 73, 0.651)),url(https://scontent.fuio16-1.fna.fbcdn.net/v/t1.6435-9/77289067_1386437548184720_8865114783037259776_n.jpg?stp=dst-jpg_p720x720&_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=pLSOguni5MsAX8TQzwW&_nc_ht=scontent.fuio16-1.fna&oh=00_AT9AQeKvGfQCbnUSU5EFfBmp9-MrD3yRVjMWQ1HbmCitUA&oe=62B46F39);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+#survey-form{
+    margin: auto;
+    width: 800px;
+    padding:  3%;
+    border-radius: 5%;
+    background-color: rgba(15, 4, 54, 0.685);
+}
+.from-group{
+    padding: 20px 20px 5px 20px;
+}
+label{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+}
+#name{
+    color: black;
+}
+#email{
+    color: black;
+}
+#number{
+    color: black;
+}
+#dropdown{
+    color: black;
+}
+option{
+    color: black;
+}
+form p{
+    text-align: start;
+}
+input{
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+}
+input:hover{
+    box-shadow: inset;
+}
+#radio{
+    width: 20px;
+    padding-right: 30px;
+}
+#checkbox{
+    width: 20px;
+    margin-right: 10px;
+}
+#submit{
+    width: 100%;
+    color: black;
+    font-size: 20px;
+}
+#coments{
+    width: 100%;
+    color: black;
+    height: 100px;
+}
+
